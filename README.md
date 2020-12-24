@@ -1,6 +1,6 @@
 # Posseidon
 
-<p align="center">Olá, meu nome é Matheus mas pode me chamar de Posseidon</p>
+<h4 align="center">Olá, meu nome é Matheus mas pode me chamar de Posseidon</h4>
 
 <h2 align="center">Sobre mim</h2>
 
