@@ -6,4 +6,4 @@ Olá, Meu nome é Matheus, meu apelido/nick é Posseidon (Por causa do meu sobre
 
 <h2 align="center">Minhas Redes Sociais</h2>
 
-![Twitter](https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-10.png) TWITTER: @P0sseid0n 
+![Twitter](https://files.softicons.com/download/social-media-icons/free-social-media-icons-by-uiconstock/png/32x32/Twitter-Icon.png) TWITTER: @P0sseid0n 
