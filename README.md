@@ -1,13 +1,13 @@
-<h2 align="center">Olá, meu nome é Matheus mas pode me chamar de Posseidon</h2>
+<h2 align="center">Hi, I'm Posseidon!</h2>
 
 <ul>
-    <li>Tenho 16 anos.</li>
-    <li>Sou do Rio de Janeiro, Brazil.</li>
-    <li>Focado em aprender <b>Javascript</b> fazendo bots para o discord.</li>
-    <li>Comecei no front end porém pretendo ir para o back-end também.</li>
+    <li>I'm 16 years old.</li>
+    <li>I'm from Rio de Janeiro, Brazil.</li>
+    <li>Currently learning <b>Javascript</b> making bots to discord.</li>
+    <li>I started studying front-end but I want to learn back-end too.</li>
 </ul>
 
-<h2 align="center">Me segue ai</h2>
+<h2 align="center">Follow Me</h2>
 
 <ul>
     <li><img src="./Logos/Twitter-Icon.png" alt="Twiiter Icon"> <a href="https://twitter.com/P0sseid0n">Twitter:</a> @P0sseid0n  </img></li>
