@@ -10,9 +10,6 @@
 <h2 align="center">Me segue ai</h2>
 
 <ul>
-    <li><img src="./Logos/Twitter-Icon.png" alt="Twiiter Icon"> <a href="https://twitter.com/P0sseid0n">Twitter:</a> </img></li>
+    <li><img src="./Logos/Twitter-Icon.png" alt="Twiiter Icon"> <a href="https://twitter.com/P0sseid0n">Twitter:</a> @P0sseid0n  </img></li>
     <li><img src="./Logos/Discord-Icon.png" alt="Discord Icon"> <b>Discord:</b> 𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷#6485 </img></li>
 </ul>
-
-![Twitter](./Logos/Twitter-Icon.png) [Twitter]() @P0sseid0n 
-![Twitter](./Logos/Discord-Icon.png) 
