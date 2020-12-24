@@ -1,4 +1,4 @@
-<h3 align="center">Olá, meu nome é Matheus mas pode me chamar de Posseidon</h3>
+<h2 align="center">Olá, meu nome é Matheus mas pode me chamar de Posseidon</h2>
 
 <ul>
     <li>Tenho 16 anos.</li>
