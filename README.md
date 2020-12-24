@@ -11,4 +11,4 @@
 
 <h2 align="center">Me segue ai</h2>
 
-![Twitter](https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-10.png) TWITTER: @P0sseid0n 
+![Twitter](./Logos/Twitter-Icon.png) TWITTER: @P0sseid0n 
