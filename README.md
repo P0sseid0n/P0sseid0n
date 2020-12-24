@@ -1,4 +1,4 @@
-<h2>Hi, I'm Posseidon!</h2>
+<h2 align="center">Hi, I'm Posseidon!</h2>
 
 <ul>
     <li>I'm 16 years old.</li>
