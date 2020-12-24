@@ -1,4 +1,4 @@
-<h2 align="center">Olá, meu nome é Matheus mas pode me chamar de Posseidon</h2>
+<h3 align="center">Olá, meu nome é Matheus mas pode me chamar de Posseidon</h3>
 
 <ul>
     <li>Tenho 16 anos.</li>
@@ -7,7 +7,7 @@
     <li>Comecei no front end porém pretendo ir para o back-end também.</li>
 </ul>
 
-<h3 align="center">Me segue ai</h3>
+<h2 align="center">Me segue ai</h2>
 
 <ul>
     <li><img src="./Logos/Twitter-Icon.png" alt="Twiiter Icon"> <a href="https://twitter.com/P0sseid0n">Twitter:</a> @P0sseid0n  </img></li>
