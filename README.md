@@ -1,4 +1,4 @@
-<h2 align="center">Hi, I'm Posseidon!</h2>
+<h2>Hi, I'm Posseidon!</h2>
 
 <ul>
     <li>I'm 16 years old.</li>
@@ -7,7 +7,7 @@
     <li>I started studying front-end but I want to learn back-end too.</li>
 </ul>
 
-<h2 align="center">Follow Me</h2>
+<h2>Follow Me</h2>
 
 <ul>
     <li><img src="./Logos/Twitter-Icon.png" alt="Twiiter Icon"> <a href="https://twitter.com/P0sseid0n">Twitter:</a> @P0sseid0n  </img></li>
