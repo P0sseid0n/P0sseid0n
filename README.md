@@ -2,7 +2,7 @@
 <h4>📖 Learning JavaScript by making discord bots.</h4>
 
 <ul>
-    <li>Twitter: <a href="https://twitter.com/P0sseid0n">@P0sseid0n</a></li>
+    <li>Twitter: <b><a href="https://twitter.com/P0sseid0n">@P0sseid0n</a></b></li>
     <li>Discord: 𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷<b>#6485</b></li>
 </ul>
 
