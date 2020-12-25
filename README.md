@@ -10,6 +10,6 @@
 <h2>Follow Me</h2>
 
 <ul>
-    <li><a href="https://twitter.com/P0sseid0n">Twitter:</a> @P0sseid0n  </img></li>
-    <li><b>Discord:</b> 𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷#6485 </img></li>
+    <li><img src="./Logos/Twitter-Icon.png" alt="Twiiter Icon"> <a href="https://twitter.com/P0sseid0n">Twitter:</a> @P0sseid0n  </img></li>
+    <li><img src="./Logos/Discord-Icon.png" alt="Discord Icon"> <b>Discord:</b> 𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷#6485 </img></li>
 </ul>
