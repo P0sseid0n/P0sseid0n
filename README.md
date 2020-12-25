@@ -9,7 +9,7 @@
 <hr>
 
 ```javascript
-const thai = {
+const Posseidon = {
   name: "Matheus",
   age: 16
   from: "Rio de janeiro, Brazil"
