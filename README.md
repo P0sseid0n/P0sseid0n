@@ -3,7 +3,7 @@
 
 <ul>
     <li>Twitter: <a href="https://twitter.com/P0sseid0n">@P0sseid0n</a></li>
-    <li>Discord: <b>𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷#6485</b></li>
+    <li>Discord: 𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷<b>#6485</b></li>
 </ul>
 
 <h2>About me...</h2>
