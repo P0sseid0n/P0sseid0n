@@ -2,8 +2,8 @@
 <h4>📖 Learning JavaScript by making discord bots.</h4>
 
 <ul>
-    <li><a href="https://twitter.com/P0sseid0n">Twitter:</a> @P0sseid0n  </img></li>
-    <li><b>Discord:</b> 𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷#6485 </img></li>
+    <li>Twitter: <a href="https://twitter.com/P0sseid0n">@P0sseid0n</a></li>
+    <li>Discord: 𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷#6485</li>
 </ul>
 
 <h2>About me...</h2>
