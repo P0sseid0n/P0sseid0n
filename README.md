@@ -14,7 +14,7 @@
 ```javascript
 const Posseidon = {
   name: "Matheus",
-  age: 16
+  age: 16,
   from: "Rio de janeiro, Brazil",
   code: [Javascript, HTML, CSS]
 }
