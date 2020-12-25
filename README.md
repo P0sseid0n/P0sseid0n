@@ -7,8 +7,7 @@
     <li>I started studying front-end but I want to learn back-end too.</li>
 </ul>
 
-<h2>Follow Me</h2>
-
+<h3>Follow Me</h2>
 <hr>
 
 <ul>
