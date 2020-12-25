@@ -2,7 +2,7 @@
 
 <h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32px"> Hi, I'm Posseidon!!</h1>
 
-<h3>My name is Matheus, I'm 16 years old and I'm focusing on learning NodeJS, currently doing discord bots.<h3>
+<h3>My name is Matheus, I'm 16 years old and I'm focusing on learning NodeJS, currently doing discord bots.</h3>
 
 <ul>
     <li>Twitter: <b><a href="https://twitter.com/P0sseid0n">@P0sseid0n</a></b></li>
