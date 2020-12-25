@@ -6,7 +6,7 @@
     <li><b>Discord:</b> 𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷#6485 </img></li>
 </ul>
 
-<hr>
+<h3>About me...</h3>
 
 ```javascript
 const Posseidon = {
