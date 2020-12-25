@@ -1,5 +1,5 @@
 <h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32px"> Hi, I'm Posseidon!!</h1>
-<h4>Studying Javascript making discord bots</h4>
+<h4>📖 Learning JavaScript by making discord bots.</h4>
 
 <ul>
     <li><a href="https://twitter.com/P0sseid0n">Twitter:</a> @P0sseid0n  </img></li>
