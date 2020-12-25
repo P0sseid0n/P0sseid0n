@@ -1,5 +1,6 @@
 <h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32px"> Hi, I'm Posseidon!!</h1>
-<h4>📖 Learning JavaScript by making discord bots.</h4>
+
+<h2>Contact</h2>
 
 <ul>
     <li>Twitter: <b><a href="https://twitter.com/P0sseid0n">@P0sseid0n</a></b></li>
