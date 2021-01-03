@@ -10,7 +10,7 @@
   </a>
 </p>
 
-<h2 align="center" >Follow me</h2>
+<h2 align="center" >✉️ Contact me</h2>
 <h4 align="center" > 
   <img align="center" width="24px" src="Twitter_Icon.svg"> Twitter: <b><a href="https://twitter.com/P0sseid0n">@P0sseid0n</a></b>
   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
