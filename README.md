@@ -5,7 +5,7 @@
 <h4 align="center" >My name is Matheus, I'm 16 years old and I'm focusing on learning NodeJS. Currently doing discord bots using discord.js.</h4>
 
 <p align="center">  
-<a href="https://github.com/Posseidon0110">
+<a href="https://github.com/anuraghazra/github-readme-stats">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Posseidon0110&layout=compact)](https://github.com/anuraghazra/github-readme-stats" />
 </a>
 </p>
