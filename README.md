@@ -12,7 +12,10 @@
 
 <h2 align="center" >Follow me</h2>
 <h4 align="center" > 
-  <img align="center" src="http://i.imgur.com/wWzX9uB.png" /> Twitter: <b><a href="https://twitter.com/P0sseid0n">@P0sseid0n</a></b>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  Discord: 𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷<b>#6485</b>
+  <img align="center" width="24px" src="Twitter_Icon.svg"> Twitter: <b><a href="https://twitter.com/P0sseid0n">@P0sseid0n</a></b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img align="center" width="24px" src="Discord_Icon.svg"> Discord: 𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷<b>#6485</b>
 </h4>
+
+
+
