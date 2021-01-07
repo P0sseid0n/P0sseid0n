@@ -12,7 +12,7 @@
 
 <h2 align="center" >✉️ Contact me</h2>
 <h4 align="center" > 
-  <img align="center" width="24px" src="Twitter_Icon.svg"> Twitter: <b><a href="https://twitter.com/P0sseid0n">@P0sseid0n</a></b>
+  <img align="center" width="24px" src="Twitter_Icon.svg"> <b>Twitter:</b> <a href="https://twitter.com/P0sseid0n">@P0sseid0n</a>
   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-  <img align="center" width="24px" src="Discord_Icon.svg"> Discord: 𝓟𝓸𝓼𝓼𝓮𝓲𝓭𝓸𝓷<b>#6485</b>
+  <img align="center" width="24px" src="Discord_Icon.svg"> <b>Discord</b>: Posseidon#6485
 </h4>
