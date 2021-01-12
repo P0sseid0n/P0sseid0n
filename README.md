@@ -1,11 +1,26 @@
 <h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32px"> Hi, I'm Posseidon!!</h1>
 
-[![Website Badge](https://img.shields.io/badge/-WebSite-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=google-chrome&logoColor=white&link=https://posseidon.netlify.app/)](https://posseidon.netlify.app/)
-[![Twitter Badge](https://img.shields.io/badge/-Twitter-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=twitter&logoColor=white&link=https://twitter.com/P0sseid0n)](https://twitter.com/P0sseid0n)
-[![Discord Badge](https://img.shields.io/badge/-Discord-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=discord&logoColor=white&link=https://discord.com/users/237313382657687552)](https://discord.com/users/237313382657687552)
+<p align="center">
+  <a href="https://posseidon.netlify.app/"><img src="https://img.shields.io/badge/-WebSite-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=google-chrome&logoColor=white&link=https://posseidon.netlify.app/" /></a>
+    <a href="https://twitter.com/P0sseid0n"><img src="https://img.shields.io/badge/-Twitter-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=twitter&logoColor=white&link=https://twitter.com/P0sseid0n" /></a>
+    <a href="https://discord.com/users/237313382657687552"><img src="https://img.shields.io/badge/-Discord-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=discord&logoColor=white&link=https://discord.com/users/237313382657687552" /></a>
+</p>
+
+
+
 
 <h4 align="center"> My name is Matheus, I'm 16 years old and I'm focusing on learning NodeJS. Currently doing discord bots using discord.js.  </h4>
 
 <p align="center">  
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Posseidon0110&layout=compact" />
+</p>
+
+<h2 align="center"> Languages and tools  </h2>
+
+<p align="center">
+  <img src="https://img.icons8.com/color/40/000000/html-5.png">
+  <img src="https://img.icons8.com/color/40/0080FF/css3.png">
+  <img src="https://img.icons8.com/color/40/000000/javascript.png">
+  <img src="https://img.icons8.com/windows/40/4caf50/node-js.png">
+  <img src="https://img.icons8.com/ios/48/00758F/mysql-logo.png">
 </p>
