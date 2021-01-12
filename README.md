@@ -12,7 +12,7 @@
 <h4 align="center"> My name is Matheus, I'm 16 years old and I'm focusing on learning NodeJS. Currently doing discord bots using discord.js.  </h4>
 
 <p align="center">  
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Posseidon0110&layout=compact" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Posseidon0110&layout=compact&theme=dark" />
 </p>
 
 <h2 align="center"> Languages and tools  </h2>
