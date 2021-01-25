@@ -8,8 +8,7 @@
 
 
 
-
-<h4 align="center"> My name is Matheus, I'm 16 years old and I'm focusing on learning NodeJS. Currently doing discord bots using discord.js.  </h4>
+<h4 align="center"> My name is Matheus but you can call me Posseidon, I'm 16 years old and I'm studying <b> Javascript </b>.</h4>
 
 <p align="center">  
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Posseidon0110&layout=compact&title_color=fffcfc&bg_color=181617&text_color=dcd2d2" />
