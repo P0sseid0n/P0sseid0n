@@ -21,6 +21,7 @@
   <img src="https://img.icons8.com/color/40/0080FF/css3.png">
   <img src="https://img.icons8.com/color/40/000000/javascript.png">
   <img src="https://img.icons8.com/windows/40/4caf50/node-js.png">
+  <img src="https://img.icons8.com/color/40/000000/vue-js.png">
   <img src="https://img.icons8.com/ios/40/00758F/mysql-logo.png">
-  <img src="https://img.icons8.com/color/40/000000/vue-js.png"/>
+  <img src="https://img.icons8.com/color/40/000000/mongodb.png">
 </p>
