@@ -14,7 +14,7 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=P0sseid0n&layout=compact&title_color=fffcfc&bg_color=181617&text_color=dcd2d2" />
 </p>
 
-<h2 align="center"> Languages and tools  </h2>
+<h2 align="center"> Technologies </h2>
 
 <p align="center">
   <img src="https://img.icons8.com/color/40/000000/html-5.png">
