@@ -24,4 +24,5 @@
   <img src="https://img.icons8.com/color/40/000000/vue-js.png">
   <img src="https://img.icons8.com/ios/40/00758F/mysql-logo.png">
   <img src="https://img.icons8.com/color/40/000000/mongodb.png">
+  <img src="https://img.icons8.com/color/40/000000/react-native.png">
 </p>
