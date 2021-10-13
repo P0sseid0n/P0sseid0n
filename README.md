@@ -26,3 +26,5 @@
   <img src="https://img.icons8.com/color/40/000000/mongodb.png">
   <img src="https://img.icons8.com/color/40/000000/react-native.png">
 </p>
+
+![Snake animation](https://github.com/P0sseid0n/P0sseid0n/blob/output/github-contribution-grid-snake.svg)
