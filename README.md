@@ -4,6 +4,7 @@
   <a href="https://posseidon.netlify.app/"><img src="https://img.shields.io/badge/-WebSite-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=google-chrome&logoColor=white&link=https://posseidon.netlify.app/" /></a>
     <a href="https://twitter.com/P0sseid0n"><img src="https://img.shields.io/badge/-Twitter-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=twitter&logoColor=white&link=https://twitter.com/P0sseid0n" /></a>
     <a href="https://discord.com/users/237313382657687552"><img src="https://img.shields.io/badge/-Discord-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=discord&logoColor=white&link=https://discord.com/users/237313382657687552" /></a>
+  <a href="https://www.linkedin.com/in/matheuspossidonio/"><img src="https://img.shields.io/badge/-Linkedin-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/matheuspossidonio/" /></a>
 </p>
 
 
@@ -26,5 +27,3 @@
   <img src="https://img.icons8.com/color/40/000000/mongodb.png">
   <img src="https://img.icons8.com/color/40/000000/react-native.png">
 </p>
-
-![Snake animation](https://github.com/P0sseid0n/P0sseid0n/blob/output/github-contribution-grid-snake.svg)
