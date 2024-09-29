@@ -9,7 +9,7 @@
 
 
 
-<h4 align="center"> My name is Matheus but you can call me Posseidon, I'm 18 years old and I'm studying <b> Typescript </b>.</h4>
+<h4 align="center"> My name is Matheus but you can call me Posseidon, I'm 20 years old and I'm studying <b> Typescript </b>.</h4>
 
 <p align="center">  
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=P0sseid0n&layout=compact&title_color=fffcfc&bg_color=181617&text_color=dcd2d2" />
