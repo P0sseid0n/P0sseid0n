@@ -15,11 +15,6 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=P0sseid0n&layout=compact&title_color=fffcfc&bg_color=181617&text_color=dcd2d2" />
 </p>
 
-<p align="center">  
-  <img align="center" src="https://github-readme-stats.vercel.app/api/wakatime?username=p0sseid0n" />
-</p>
-<h2 align="center"> Technologies </h2>
-
 <p align="center">
   <img src="https://img.icons8.com/color/40/000000/html-5.png">
   <img src="https://img.icons8.com/color/40/0080FF/css3.png">
