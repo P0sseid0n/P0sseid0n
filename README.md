@@ -16,7 +16,7 @@
 </p>
 
 
-<h3 align="center">📊 GitHub Stats</h3>
+<h3 align="center">📊 GitHub Status</h3>
 
 <p align="center">
   <img width="420" src="https://github-readme-stats.vercel.app/api?username=P0sseid0n&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" />
