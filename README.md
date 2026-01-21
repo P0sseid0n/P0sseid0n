@@ -7,7 +7,7 @@
 <h3 align="center">🚀 Tecnologias</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,vue,nuxt,react,next,nodejs,bun,express,nest,mongodb,postgres,mysql,prisma,git,docker,figma,jest,vitest,linux" />
+  <img src="https://skillicons.dev/icons?i=html,css,sass,py,ts,js,vue,nuxt,pinia,react,next,nodejs,bun,express,nest,mongodb,postgres,mysql,mongo,prisma,git,docker,figma,jest,vitest,linux,redis,supabase" />
 </p>
 
 ---
