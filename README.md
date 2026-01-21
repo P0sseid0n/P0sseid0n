@@ -1,27 +1,30 @@
-<h1 align="center"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32px"> Hi, I'm P0sseid0n!!</h1>
+<h1 align="center">
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32px">
+  Olá, eu sou P0sseid0n!!
+</h1>
+
+
+<h3 align="center">🚀 Tecnologias</h3>
 
 <p align="center">
-  <a href="https://posseidon.netlify.app/"><img src="https://img.shields.io/badge/-WebSite-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=google-chrome&logoColor=white&link=https://posseidon.netlify.app/" /></a>
-    <a href="https://twitter.com/P0sseid0n"><img src="https://img.shields.io/badge/-Twitter-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=twitter&logoColor=white&link=https://twitter.com/P0sseid0n" /></a>
-    <a href="https://discord.com/users/237313382657687552"><img src="https://img.shields.io/badge/-Discord-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=discord&logoColor=white&link=https://discord.com/users/237313382657687552" /></a>
-  <a href="https://www.linkedin.com/in/matheuspossidonio/"><img src="https://img.shields.io/badge/-Linkedin-87221e?style=for-the-badge&labelColor=87221e&color=87221e&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/matheuspossidonio/" /></a>
+  <img src="https://skillicons.dev/icons?i=ts,js,vue,nuxt,react,next,nodejs,bun,express,nest,mongodb,postgres,mysql,prisma,git,docker,figma,jest,vitest,linux" />
 </p>
 
-
-
-<h4 align="center"> My name is Matheus but you can call me Posseidon, I'm 20 years old and I'm studying <b> Typescript </b>.</h4>
-
-<p align="center">  
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=P0sseid0n&layout=compact&title_color=fffcfc&bg_color=181617&text_color=dcd2d2" />
-</p>
+---
 
 <p align="center">
-  <img src="https://img.icons8.com/color/40/000000/html-5.png">
-  <img src="https://img.icons8.com/color/40/0080FF/css3.png">
-  <img src="https://img.icons8.com/color/40/000000/javascript.png">
-  <img src="https://img.icons8.com/windows/40/4caf50/node-js.png">
-  <img src="https://img.icons8.com/color/40/000000/vue-js.png">
-  <img src="https://img.icons8.com/ios/40/00758F/mysql-logo.png">
-  <img src="https://img.icons8.com/color/40/000000/mongodb.png">
-  <img src="https://img.icons8.com/color/40/000000/react-native.png">
+  <img width="420" src="https://github-readme-stats.vercel.app/api?username=P0sseid0n&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" />
+  <img width="320" src="https://github-readme-stats.vercel.app/api/top-langs/?username=P0sseid0n&layout=compact&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" />
 </p>
+
+
+<h3 align="center">🤝 Vamos construir algo juntos?</h3>
+
+<p align="center">Se você tem um projeto interessante ou uma ideia ousada, vamos conversar.</p>
+
+<p align="center">
+  <a href="https://posseidon.dev/"><img src="https://img.shields.io/badge/-WebSite-225277?style=for-the-badge&labelColor=225277&color=225277&logo=google-chrome&logoColor=white&link=https://posseidon.dev/" /></a>
+    <a href="https://x.com/notP0sseid0n"><img src="https://img.shields.io/badge/-Twitter/X-225277?style=for-the-badge&labelColor=225277&color=225277&logo=x&logoColor=white&link=https://x.com/notP0sseid0n" /></a>
+    <a href="https://discord.com/users/237313382657687552"><img src="https://img.shields.io/badge/-Discord-225277?style=for-the-badge&labelColor=225277&color=225277&logo=discord&logoColor=white&link=https://discord.com/users/237313382657687552" /></a>
+  <a href="https://www.linkedin.com/in/matheuspossidonio/"><img src="https://img.shields.io/badge/-Linkedin-225277?style=for-the-badge&labelColor=225277&color=225277&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/matheuspossidonio/" /></a>
+</p
