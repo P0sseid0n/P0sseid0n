@@ -19,8 +19,8 @@
 <h3 align="center">📊 GitHub Status</h3>
 
 <p align="center">
-  <img width="420" src="https://github-readme-stats.vercel.app/api?username=P0sseid0n&show_icons=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff" />
-  <img width="320" src="https://github-readme-stats.vercel.app/api/top-langs/?username=P0sseid0n&layout=compact&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" />
+  <img width="320" src="https://github-stats-extended.vercel.app/api?username=P0sseid0n&rank_icon=default&hide_rank=true&custom_title=P0sseid0n's%20GitHub%20Stats&show_icons=true&include_all_commits=true&theme=prussian" />
+  <img width="320" src="https://github-stats-extended.vercel.app/api/top-langs?username=P0sseid0n&layout=compact&langs_count=8&theme=prussian" />
 </p>
 
 ---
