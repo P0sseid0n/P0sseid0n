@@ -465,7 +465,7 @@ function seededShuffle(list, seed = 7) {
 }
 
 function techGrid(t, theme) {
-  const H = 520
+  const H = 384
   const cols = 6
   const gap = 16
   const colW = (W - gap * (cols - 1)) / cols
@@ -525,7 +525,7 @@ ${columns.join('\n')}
 /* --------------------------------- Contato -------------------------------- */
 
 function contactHeader(t, theme) {
-  const H = 150
+  const H = 118
   const cx = W / 2
   const tilde = measure('~/', { font: 'mono400', size: 12 })
   const pathW = tilde + measure('contato', { font: 'mono400', size: 12 })
@@ -534,15 +534,15 @@ function contactHeader(t, theme) {
     text('contato', { font: 'mono400', size: 12, x: cx - pathW / 2 + tilde, y: 14, fill: t.accent }).svg,
     text('Quer conversar sobre um projeto ou uma vaga?', {
       font: 'display700',
-      size: 34,
+      size: 26,
       tracking: -0.025,
       x: cx,
-      y: 66,
+      y: 54,
       fill: t.fg,
       anchor: 'middle',
     }).svg,
-    text('Estou aberto a novas oportunidades e projetos.', { font: 'display400', size: 16, x: cx, y: 108, fill: t.fgMuted, anchor: 'middle' }).svg,
-    text('O jeito mais rápido de falar comigo é por e-mail.', { font: 'display400', size: 16, x: cx, y: 132, fill: t.fgMuted, anchor: 'middle' }).svg,
+    text('Estou aberto a novas oportunidades e projetos.', { font: 'display400', size: 14, x: cx, y: 86, fill: t.fgMuted, anchor: 'middle' }).svg,
+    text('O jeito mais rápido de falar comigo é por e-mail.', { font: 'display400', size: 14, x: cx, y: 106, fill: t.fgMuted, anchor: 'middle' }).svg,
   ]
   return svgDoc({
     width: W,
