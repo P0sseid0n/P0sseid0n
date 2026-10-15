@@ -15,18 +15,6 @@
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="./assets/title-sobre-light.svg">
-  <img width="100%" alt="~/sobre — Sobre mim" src="./assets/title-sobre-dark.svg">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="./assets/about-light.svg">
-  <img width="100%" alt="Me chamo Matheus Possidonio, sou do Rio de Janeiro, Brasil. Sou desenvolvedor full stack, atualmente trabalhando com front-end, com forte domínio de TypeScript. Minha especialidade é o ecossistema JavaScript, e também aplico conhecimentos em Python." src="./assets/about-dark.svg">
-</picture>
-
-<br><br>
-
-<picture>
   <source media="(prefers-color-scheme: light)" srcset="./assets/title-tecnologias-light.svg">
   <img width="100%" alt="~/tecnologias — Tecnologias" src="./assets/title-tecnologias-dark.svg">
 </picture>
@@ -43,16 +31,12 @@
   <img width="100%" alt="~/github — No GitHub" src="./assets/title-github-dark.svg">
 </picture>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api?username=P0sseid0n&hide_rank=true&custom_title=P0sseid0n's%20GitHub%20Stats&show_icons=true&include_all_commits=true&border_radius=12&bg_color=ffffff&title_color=0a6e9e&text_color=3b4855&icon_color=0a6e9e&border_color=dde4eb">
-    <img height="180" alt="Estatísticas do GitHub de P0sseid0n" src="https://github-stats-extended.vercel.app/api?username=P0sseid0n&hide_rank=true&custom_title=P0sseid0n's%20GitHub%20Stats&show_icons=true&include_all_commits=true&border_radius=12&bg_color=1e242b&title_color=40bde7&text_color=d1d5dc&icon_color=40bde7&border_color=2a3741">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://github-stats-extended.vercel.app/api/top-langs?username=P0sseid0n&layout=compact&langs_count=8&border_radius=12&bg_color=ffffff&title_color=0a6e9e&text_color=3b4855&border_color=dde4eb">
-    <img height="180" alt="Linguagens mais usadas por P0sseid0n" src="https://github-stats-extended.vercel.app/api/top-langs?username=P0sseid0n&layout=compact&langs_count=8&border_radius=12&bg_color=1e242b&title_color=40bde7&text_color=d1d5dc&border_color=2a3741">
-  </picture>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="./assets/github-light.svg">
+  <img width="100%" alt="Estatísticas do GitHub e linguagens mais usadas por P0sseid0n" src="./assets/github-dark.svg">
+</picture>
+
+<br><br>
 
 <br><br>
 

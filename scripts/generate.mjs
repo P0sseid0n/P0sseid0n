@@ -2,7 +2,7 @@
 // O texto vira path, então o SVG não depende de fonte instalada nem de carregar nada externo.
 // Uso: npm ci && npm run generate (dentro de scripts/)
 
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import opentype from 'opentype.js'
 
@@ -276,112 +276,140 @@ function sectionTitle(t, path, title) {
   })
 }
 
-/* ---------------------------------- Sobre --------------------------------- */
+/* --------------------------------- GitHub --------------------------------- */
 
-function diffYearsMonths(start) {
-  const s = new Date(start)
-  const now = new Date()
-  let years = now.getFullYear() - s.getFullYear()
-  let months = now.getMonth() - s.getMonth()
-  if (months < 0) {
-    years--
-    months += 12
-  }
-  if (now.getDate() < s.getDate()) {
-    months--
-    if (months < 0) {
-      years--
-      months = 11
-    }
-  }
-  return { years, months }
-}
+const USER = 'P0sseid0n'
 
-export function aboutParagraphs() {
-  const age = diffYearsMonths('2004-10-01').years
-  const exp = diffYearsMonths('2022-04-25')
-  // **negrito** como no site
-  return [
-    `Me chamo Matheus Possidonio, tenho ${age} anos, sou do Rio de Janeiro, Brasil. Sou desenvolvedor **full stack**, atualmente trabalhando com **front-end**, com forte domínio de **TypeScript**, ${exp.years} anos e ${exp.months} meses de experiência profissional.`,
-    'Minha especialidade é o ecossistema **JavaScript**, mas minha curiosidade não tem fronteiras. Gosto de problemas que exigem lógica de **back-end**, sensibilidade de design no **front-end** e também aplico conhecimentos em **Python**.',
-  ]
-}
-
-const HASHTAGS = ['FrontEnd', 'BackEnd', 'FullStack', 'TypeScript', 'Python']
-
-// Quebra de linha com trechos em negrito
-function wrapRich(paragraph, { size, maxWidth }) {
-  const tokens = []
-  paragraph.split(/(\*\*[^*]+\*\*)/).forEach((chunk) => {
-    if (!chunk) return
-    const bold = chunk.startsWith('**')
-    const raw = bold ? chunk.slice(2, -2) : chunk
-    raw.split(/(\s+)/).forEach((word) => word && tokens.push({ word, bold }))
-  })
-  const fontOf = (bold) => (bold ? 'display600' : 'display400')
-  const lines = [[]]
-  let x = 0
-  for (const tok of tokens) {
-    const w = measure(tok.word, { font: fontOf(tok.bold), size })
-    const isSpace = /^\s+$/.test(tok.word)
-    if (!isSpace && x + w > maxWidth && lines.at(-1).length) {
-      lines.push([])
-      x = 0
-    }
-    if (isSpace && x === 0) continue
-    lines.at(-1).push({ ...tok, x, font: fontOf(tok.bold) })
-    x += w
-  }
-  return lines
-}
-
-function about(t, theme) {
-  const pad = 44
-  const size = 17
-  const lh = size * 1.65
-  const maxWidth = 580
-  const parts = []
-  let y = pad + size
-  const paragraphs = aboutParagraphs()
-  paragraphs.forEach((para, i) => {
-    if (i) y += 16
-    for (const line of wrapRich(para, { size, maxWidth })) {
-      for (const tok of line) {
-        if (/^\s+$/.test(tok.word)) continue
-        parts.push(
-          text(tok.word, { font: tok.font, size, x: pad + tok.x, y, fill: tok.bold ? t.fgSoft : t.fgMuted }).svg,
-        )
+// Dados públicos do perfil pela API GraphQL. Precisa de GITHUB_TOKEN (o workflow já fornece).
+async function fetchGithub() {
+  const token = process.env.GITHUB_TOKEN
+  if (!token) throw new Error('GITHUB_TOKEN não definido')
+  const query = `query($login: String!) {
+    user(login: $login) {
+      pullRequests { totalCount }
+      issues { totalCount }
+      contributionsCollection {
+        totalCommitContributions
+        contributionCalendar { totalContributions }
       }
-      y += lh
+      repositories(ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, first: 100) {
+        totalCount
+        nodes {
+          stargazerCount
+          languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
+            edges { size node { name color } }
+          }
+        }
+      }
     }
+  }`
+  const res = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: { Authorization: `bearer ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query, variables: { login: USER } }),
   })
+  const json = await res.json()
+  if (!res.ok || json.errors) throw new Error(JSON.stringify(json.errors ?? json))
+  const user = json.data.user
+  const repos = user.repositories.nodes
 
-  // Hashtags
-  y += 32 - lh + 6
-  let x = pad
-  for (const tag of HASHTAGS) {
-    const label = text(`#${tag}`, { font: 'mono400', size: 12, x: x + 10, y: y + 17, fill: t.accent })
-    const w = label.width + 20
-    parts.push(
-      `<rect x="${x + 0.5}" y="${y + 0.5}" width="${w - 1}" height="25" rx="4" fill="${t.accent}" fill-opacity="0.1" stroke="${t.accent}" stroke-opacity="0.2"/>`,
-      label.svg,
-    )
-    x += w + 8
+  const bytes = new Map()
+  for (const repo of repos) {
+    for (const { size, node } of repo.languages.edges) {
+      const prev = bytes.get(node.name)
+      bytes.set(node.name, { color: node.color ?? '#8a94a3', size: (prev?.size ?? 0) + size })
+    }
   }
-  const H = Math.round(y + 26 + pad)
+  const totalBytes = [...bytes.values()].reduce((sum, l) => sum + l.size, 0)
+  const languages = [...bytes.entries()]
+    .sort((x, y) => y[1].size - x[1].size)
+    .slice(0, 8)
+    .map(([name, l]) => ({ name, color: l.color, percent: (l.size / totalBytes) * 100 }))
 
-  const body = `<rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="16" fill="${t.card}" stroke="${t.cardBorder}"/>
-<g class="pulse">${icon('ms', 'fingerprint', { x: W - 48 - 200, y: (H - 200) / 2, size: 200, fill: t.fg })}</g>
-${parts.join('\n')}`
+  return {
+    stats: {
+      stars: repos.reduce((sum, r) => sum + r.stargazerCount, 0),
+      commits: user.contributionsCollection.totalCommitContributions,
+      prs: user.pullRequests.totalCount,
+      issues: user.issues.totalCount,
+      contributions: user.contributionsCollection.contributionCalendar.totalContributions,
+      repos: user.repositories.totalCount,
+    },
+    languages,
+  }
+}
 
-  return svgDoc({
-    width: W,
-    height: H,
-    title: paragraphs.map((p) => p.replaceAll('**', '')).join(' '),
-    body,
-    style: `.pulse { opacity: 0.06; animation: pulse 2s ease-in-out infinite; }
-@keyframes pulse { 0%, 100% { opacity: 0.04; } 50% { opacity: 0.08; } }`,
+const formatNumber = (n) => (n == null ? '—' : n.toLocaleString('pt-BR'))
+
+function cardFrame(t, { x, w, h, path, title }) {
+  return `<rect x="${x + 0.5}" y="0.5" width="${w - 1}" height="${h - 1}" rx="16" fill="${t.card}" stroke="${t.cardBorder}"/>
+${text('~/', { font: 'mono400', size: 12, x: x + 28, y: 38, fill: t.fgSubtle }).svg}
+${text(path, { font: 'mono400', size: 12, x: x + 28 + measure('~/', { font: 'mono400', size: 12 }), y: 38, fill: t.accent }).svg}
+${text(title, { font: 'display700', size: 22, tracking: -0.025, x: x + 28, y: 68, fill: t.fg }).svg}`
+}
+
+function githubCards(t, data) {
+  const H = 300
+  const gap = 16
+  const leftW = 424
+  const rightX = leftW + gap
+  const rightW = W - rightX
+  const parts = []
+
+  // Estatísticas
+  parts.push(cardFrame(t, { x: 0, w: leftW, h: H, path: 'stats', title: 'Estatísticas' }))
+  const s = data?.stats ?? {}
+  const rows = [
+    ['star', 'Estrelas recebidas', s.stars],
+    ['commit', 'Commits (últimos 12 meses)', s.commits],
+    ['merge', 'Pull requests', s.prs],
+    ['error-outline', 'Issues', s.issues],
+    ['calendar-month', 'Contribuições (últimos 12 meses)', s.contributions],
+    ['folder', 'Repositórios públicos', s.repos],
+  ]
+  rows.forEach(([iconName, label, value], i) => {
+    const y = 100 + i * 32
+    if (i) parts.push(`<path d="M28 ${y - 9.5}H${leftW - 28}" stroke="${t.cardBorder}" stroke-opacity="0.6"/>`)
+    parts.push(
+      icon('ms', iconName, { x: 28, y: y + 1, size: 18, fill: t.accent }),
+      text(label, { font: 'display400', size: 15, x: 56, y: y + 15, fill: t.fgMuted }).svg,
+      text(formatNumber(value), { font: 'mono500', size: 15, x: leftW - 28, y: y + 15, fill: t.fg, anchor: 'end' }).svg,
+    )
   })
+
+  // Linguagens
+  parts.push(cardFrame(t, { x: rightX, w: rightW, h: H, path: 'linguagens', title: 'Linguagens mais usadas' }))
+  const langs = data?.languages ?? []
+  const barX = rightX + 28
+  const barW = rightW - 56
+  if (langs.length) {
+    const shown = langs.reduce((sum, l) => sum + l.percent, 0)
+    let bx = barX
+    const segs = langs.map((l) => {
+      const w = (l.percent / shown) * barW
+      const seg = `<rect x="${bx.toFixed(2)}" y="96" width="${w.toFixed(2)}" height="8" fill="${l.color}"/>`
+      bx += w
+      return seg
+    })
+    parts.push(`<clipPath id="bar"><rect x="${barX}" y="96" width="${barW}" height="8" rx="4"/></clipPath><g clip-path="url(#bar)">${segs.join('')}</g>`)
+    const colW = barW / 2
+    langs.forEach((l, i) => {
+      const cx = barX + (i % 2) * colW
+      const cy = 136 + Math.floor(i / 2) * 36
+      parts.push(
+        `<circle cx="${cx + 5}" cy="${cy - 5}" r="5" fill="${l.color}"/>`,
+        text(l.name, { font: 'display500', size: 15, x: cx + 18, y: cy, fill: t.fgSoft }).svg,
+        text(`${l.percent.toFixed(1).replace('.', ',')}%`, { font: 'mono400', size: 13, x: cx + colW - 16, y: cy, fill: t.fgSubtle, anchor: 'end' }).svg,
+      )
+    })
+  } else {
+    parts.push(`<rect x="${barX}" y="96" width="${barW}" height="8" rx="4" fill="${t.cardBorder}"/>`)
+  }
+
+  const summary = data
+    ? `Estatísticas do GitHub de ${USER}: ${rows.map(([, l, v]) => `${l}: ${formatNumber(v)}`).join('; ')}. Linguagens: ${langs.map((l) => `${l.name} ${l.percent.toFixed(1)}%`).join(', ')}.`
+    : `Estatísticas do GitHub de ${USER}`
+  return svgDoc({ width: W, height: H, title: summary, body: parts.join('\n') })
 }
 
 /* ------------------------------- Tecnologias ------------------------------ */
@@ -558,12 +586,22 @@ function iconButton(t, { label, iconSet, iconName }) {
 
 /* ---------------------------------- Gera ---------------------------------- */
 
+// Sem dados (rodando local sem token, ou a API falhou) os cards antigos são mantidos
+let githubData = null
+try {
+  githubData = await fetchGithub()
+} catch (err) {
+  console.warn(`Não foi possível buscar os dados do GitHub: ${err.message}`)
+  // No workflow a falha precisa aparecer, senão os cards ficam velhos sem ninguém perceber
+  if (process.env.CI) process.exitCode = 1
+}
+const hasGithubCards = existsSync(new URL('github-dark.svg', OUT))
+
 for (const [theme, t] of Object.entries(THEMES)) {
   save('hero', theme, hero(t, theme))
-  save('title-sobre', theme, sectionTitle(t, 'sobre', 'Sobre mim'))
   save('title-tecnologias', theme, sectionTitle(t, 'tecnologias', 'Tecnologias'))
   save('title-github', theme, sectionTitle(t, 'github', 'No GitHub'))
-  save('about', theme, about(t, theme))
+  if (githubData || !hasGithubCards) save('github', theme, githubCards(t, githubData))
   save('techs', theme, techGrid(t, theme))
   save('contact', theme, contactHeader(t, theme))
   save('btn-site', theme, button(t, { label: 'Visitar site', iconName: 'arrow-outward', variant: 'filled' }))

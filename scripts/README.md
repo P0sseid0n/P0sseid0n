@@ -8,4 +8,6 @@ npm ci
 npm run generate   # escreve os arquivos em ../assets/
 ```
 
-Os textos (sobre mim, tecnologias, cargos que alternam no topo) ficam em `generate.mjs`. O workflow `.github/workflows/readme-assets.yml` roda o script todo dia, para a idade e o tempo de experiência continuarem certos, e também a cada push que mude `scripts/`.
+Os textos (tecnologias, cargos que alternam no topo) ficam em `generate.mjs`.
+
+Os cards de estatísticas e linguagens (`github-*.svg`) usam a API GraphQL do GitHub e precisam de `GITHUB_TOKEN`; sem ele, os cards existentes são mantidos. O workflow `.github/workflows/readme-assets.yml` roda o script todo dia e a cada push que mude `scripts/`.

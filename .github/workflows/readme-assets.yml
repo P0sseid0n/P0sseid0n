@@ -1,7 +1,7 @@
 name: Gerar SVGs do README
 
 on:
-  schedule: # todo dia, para manter idade e tempo de experiência atualizados
+  schedule: # todo dia, para atualizar as estatísticas do GitHub
     - cron: "17 6 * * *"
   push:
     branches: [main]
@@ -25,6 +25,8 @@ jobs:
 
       - run: npm ci && npm run generate
         working-directory: scripts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit se algo mudou
         run: |
