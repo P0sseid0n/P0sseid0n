@@ -7,12 +7,7 @@
   </picture>
 </a>
 
-<p align="center">
-  <a href="https://p0sseid0n.dev/"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn-site-light.svg"><img height="48" alt="Visitar site" src="./assets/btn-site-dark.svg"></picture></a>&nbsp;&nbsp;
-  <a href="https://docs.google.com/document/d/1rLACVhPBc8_sdbDZ1i05ssPZ02NsAOq3yxJHEB-PdH4/export?format=pdf&tab=1"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/btn-cv-light.svg"><img height="48" alt="Baixar CV" src="./assets/btn-cv-dark.svg"></picture></a>
-</p>
-
-<br>
+<br><br>
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="./assets/title-tecnologias-light.svg">

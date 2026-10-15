@@ -604,8 +604,6 @@ for (const [theme, t] of Object.entries(THEMES)) {
   if (githubData || !hasGithubCards) save('github', theme, githubCards(t, githubData))
   save('techs', theme, techGrid(t, theme))
   save('contact', theme, contactHeader(t, theme))
-  save('btn-site', theme, button(t, { label: 'Visitar site', iconName: 'arrow-outward', variant: 'filled' }))
-  save('btn-cv', theme, button(t, { label: 'Baixar CV', iconName: 'download', variant: 'outline' }))
   save('btn-email', theme, button(t, { label: 'Enviar e-mail', iconName: 'mail', variant: 'filled' }))
   save('icon-linkedin', theme, iconButton(t, { label: 'LinkedIn', iconSet: 'si', iconName: 'linkedin' }))
   save('icon-x', theme, iconButton(t, { label: 'X (Twitter)', iconSet: 'si', iconName: 'x' }))
