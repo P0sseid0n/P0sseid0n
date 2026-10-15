@@ -3,9 +3,8 @@ name: Gerar SVGs do README
 on:
   schedule: # todo dia, para atualizar as estatísticas do GitHub
     - cron: "17 6 * * *"
-  push:
-    branches: [main]
-    paths: ["scripts/**"]
+  push: # qualquer branch, para a prévia de um branch já sair com os dados
+    paths: ["scripts/**", ".github/workflows/readme-assets.yml"]
   workflow_dispatch:
 
 permissions:
