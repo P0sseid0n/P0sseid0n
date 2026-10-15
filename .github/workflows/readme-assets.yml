@@ -1,0 +1,36 @@
+name: Gerar SVGs do README
+
+on:
+  schedule: # todo dia, para manter idade e tempo de experiência atualizados
+    - cron: "17 6 * * *"
+  push:
+    branches: [main]
+    paths: ["scripts/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: scripts/package-lock.json
+
+      - run: npm ci && npm run generate
+        working-directory: scripts
+
+      - name: Commit se algo mudou
+        run: |
+          git add assets
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Atualiza SVGs do README"
+          git push

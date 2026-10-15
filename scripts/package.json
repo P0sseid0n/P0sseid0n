@@ -1,0 +1,15 @@
+{
+  "name": "readme-assets",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node generate.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "@iconify-json/material-symbols": "^1.2.95",
+    "@iconify-json/simple-icons": "^1.2.100",
+    "opentype.js": "^2.0.0"
+  }
+}
