@@ -10,6 +10,11 @@ on:
 permissions:
   contents: write
 
+# Duas execuções no mesmo branch tentariam dar push ao mesmo tempo
+concurrency:
+  group: readme-assets-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   generate:
     runs-on: ubuntu-latest
