@@ -525,14 +525,14 @@ ${columns.join('\n')}
 /* --------------------------------- Contato -------------------------------- */
 
 function contactHeader(t, theme) {
-  const H = 118
+  const H = 64
   const cx = W / 2
   const tilde = measure('~/', { font: 'mono400', size: 12 })
   const pathW = tilde + measure('contato', { font: 'mono400', size: 12 })
   const parts = [
     text('~/', { font: 'mono400', size: 12, x: cx - pathW / 2, y: 14, fill: t.fgSubtle }).svg,
     text('contato', { font: 'mono400', size: 12, x: cx - pathW / 2 + tilde, y: 14, fill: t.accent }).svg,
-    text('Quer conversar sobre um projeto ou uma vaga?', {
+    text('Vamos conversar?', {
       font: 'display700',
       size: 26,
       tracking: -0.025,
@@ -541,13 +541,11 @@ function contactHeader(t, theme) {
       fill: t.fg,
       anchor: 'middle',
     }).svg,
-    text('Estou aberto a novas oportunidades e projetos.', { font: 'display400', size: 14, x: cx, y: 86, fill: t.fgMuted, anchor: 'middle' }).svg,
-    text('O jeito mais rápido de falar comigo é por e-mail.', { font: 'display400', size: 14, x: cx, y: 106, fill: t.fgMuted, anchor: 'middle' }).svg,
   ]
   return svgDoc({
     width: W,
     height: H,
-    title: 'Quer conversar sobre um projeto ou uma vaga? Estou aberto a novas oportunidades e projetos.',
+    title: 'Vamos conversar?',
     body: parts.join('\n'),
   })
 }

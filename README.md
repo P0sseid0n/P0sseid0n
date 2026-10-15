@@ -35,7 +35,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="./assets/contact-light.svg">
-  <img width="100%" alt="Quer conversar sobre um projeto ou uma vaga? Estou aberto a novas oportunidades e projetos. O jeito mais rápido de falar comigo é por e-mail." src="./assets/contact-dark.svg">
+  <img width="100%" alt="~/contato — Vamos conversar?" src="./assets/contact-dark.svg">
 </picture>
 
 <p align="center">
