@@ -10,6 +10,7 @@
     "@fontsource/space-grotesk": "^5.3.0",
     "@iconify-json/material-symbols": "^1.2.95",
     "@iconify-json/simple-icons": "^1.2.100",
-    "opentype.js": "^2.0.0"
+    "opentype.js": "^2.0.0",
+    "svgo": "^4.1.0"
   }
 }

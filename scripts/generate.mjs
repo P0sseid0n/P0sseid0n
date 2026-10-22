@@ -5,6 +5,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import opentype from 'opentype.js'
+import { optimize } from 'svgo'
 
 const require = createRequire(import.meta.url)
 const OUT = new URL('../assets/', import.meta.url)
@@ -130,8 +131,29 @@ function escapeXml(s) {
   return s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
 }
 
+// O svgo deixa o arquivo menor sem mudar o visual. O CSS e os grupos ficam como estão:
+// as animações dependem das classes, e um transform animado por CSS substitui o
+// transform do próprio elemento, então juntar grupos tira as colunas do lugar
+const SVGO_CONFIG = {
+  multipass: true,
+  plugins: [
+    {
+      name: 'preset-default',
+      params: {
+        overrides: {
+          inlineStyles: false,
+          minifyStyles: false,
+          collapseGroups: false,
+          moveGroupAttrsToElems: false,
+          moveElemsAttrsToGroup: false,
+        },
+      },
+    },
+  ],
+}
+
 function save(name, theme, svg) {
-  writeFileSync(new URL(`${name}-${theme}.svg`, OUT), svg)
+  writeFileSync(new URL(`${name}-${theme}.svg`, OUT), optimize(svg, SVGO_CONFIG).data)
 }
 
 const pct = (t, total) => `${((t / total) * 100).toFixed(4)}%`
